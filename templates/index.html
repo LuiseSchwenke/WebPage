@@ -1,0 +1,261 @@
+{% include "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends 'bootstrap/base.html' %}
+{% block title %}Luise Schwenke{% endblock %}
+{% block content %}
+
+    <div class="container-fluid" style="border-radius:10px; border: 5px solid #1A237E; margin-top:80px;">
+        <div id="about" class="row about-section">
+
+
+            <div class="container"  >
+  <div class="row align-items-start">
+
+      <div class="col" style="padding: 60px;">
+
+                <h3 class="font-weight-light" style="color:#1A237E">Personal Info</h3>
+                <span class="line mb-5" ></span>
+                <ul class="mt40 info list-unstyled" >
+                    <li><span>Age</span> : 25 Years - [25/10/1997]</li>
+                    <li><span>Profession</span> : B. Sc.Food Engineer</li>
+                    <li><span>Address</span> : Alfred-Randt-Straße 28, 12559 Berlin - Germany</li>
+                    <li><span>E-Mail</span> : luise.schwenkee@gmail.com</li>
+                    <li><span>Phone</span> : +49 157 563 823 41 </li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link text-light" href="https://wa.me/4915756382341" target="_blank"><img src="static/assets/imgs/whatsapp-red.svg" ></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:luise.schwenkee@gmail.com" target="_blank"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/LuiseSchwenke" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
+
+    </div>
+
+
+    <div class="col" style="padding: 60px;">
+
+                <h3 class="font-weight-light" style="color:#1A237E">About Me</h3>
+                <span class="line mb-5"></span>
+                <p class="mt-20" style="text-align: justify">My name is Luise Schwenke and I am 25 years old. In 2022 I finished by Bachelor of Science in
+						food engineering at the University of Applied Sciences Neubrandenburg/ Germany. Until now I worked in the
+						areas of clinical genetic analytics and research. Due to this area becoming highly automated by the increasing
+							use of robots, my interest in the area of technology and computer sciences started growing.
+							By now I took various courses and worked out my own projects, to get to work in the area of IT.
+							On this website I want to give you a short all around view of myself and my coding projects.</p>
+                <ul class="actions">
+                    <a href="{{ url_for('download') }}" target="_blank" class="btn btn-dark">Download CV as PDF</a>
+                     <a href="{{ url_for('about_me') }}" target="_blank" class="btn btn-dark">See More About Me</a>
+						</ul>
+
+    </div>
+  </div>
+
+
+
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume" >
+        <div class="container">
+            <h2 class="mb-5" style="color:#1A237E"> My Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="border-radius:10px !important;">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Job Expertise</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body" style="text-align: justify">
+                            <h6 class="title text-danger">10/ 2012 - Present</h6>
+                            <P>Laboratory Analyst at <b>PROBIOGEN AG</b></P>
+                            <P class="subtitle">
+                            <ul >
+                            <li>Production of custom buffers and media for bacterial cell farming</li>
+                            <li>Help automating and digitalizing processes with MS Excel and Oracle</li>
+                            <li>Calculating stock levels and goods orderings</li>
+                            <li>Evaluate results of analyses</li>
+
+                            </ul>
+
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">08/ 2021 - 08/ 2022</h6>
+                            <P>Laboratory Analyst at <b>DIAGENOM GMBH</b></P>
+                            <P class="subtitle">
+                                 <ul>
+                            <li>Execute PCR and DNA Sequencing to detect genetic diseases </li>
+                            <li>Evaluate results of analyses</li>
+                            <li>Create and edit documents with MS Excel</li>
+                            <li>working with data of patients</li>
+                            <li>Evaluate results of analyses</li>
+                            </ul>
+
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">05/ 2021 - 11/ 2021</h6>
+                            <P>Intern at <b>BIOSERV GMBH</b></P>
+                            <P class="subtitle">
+                                        <ul>
+                            <li>Project: Establishing "Challenge-Tests" for food products at Bioserv GmbH </li>
+                            <li>Execute microbiological analyses like PCT, microscopy and cultivation on plates.</li>
+                            <li>Execute in-vitro toxicity tests as substitution for animal testing</li>
+                            <li>routine work in the chemistry laboratory</li>
+                            </ul>
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="border-radius:10px !important;">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2017 - 2022</h6>
+                            <P><b>B.Sc. Food Engineering</b></P>
+                            <P class="subtitle">Neubrandenburg University of Applied Sciences/ Germany</P>
+                             <a href="{{ url_for('bachelor') }}" target="_blank">See Bachelors Certificate</a>
+                            <hr>
+                            <h6 class="title text-danger">2019 - 2020</h6>
+                            <P><b>Exchange Semester Food Engineering</b></P>
+                            <P class="subtitle">Universidade Federal de Blumenau - Santa Catarina/ Brazil</P>
+                            <hr>
+                            <h6 class="title text-danger">2012 - 2016</h6>
+                            <P><b>High School Degree</b></P>
+                            <P class="subtitle">Emmy Noether-Gymnasium Berlin/ Germany</P>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="border-radius:10px !important;">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                         <div class="card-body" style="text-align: justify">
+                            <h6 class="title text-danger">IT</h6>
+                            <P class="subtitle">
+                            <ul >
+                            <li> <b>Microsoft Office: </b>advanced knowledge in MS Excel, Word, PowerPoint, OneNote</li>
+                            <li><b>Data Science: </b>Intermediate knowledge on Data Scienes/ Python</li>
+                            <li><b>Web Development: </b>Intermediate knowledge in web development/ Python (APIs, SQL, Web Scraping)</li>
+                            <li><b>Android App Development: </b>Intermediate knowledge in android app development/ Java</li>
+                             <a href="{{ url_for('android') }}" target="_blank">See Certificate</a>
+
+                            </ul>
+
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">Languages</h6>
+                            <P class="subtitle">
+                                 <ul>
+                            <li><b>German: </b> native language</li>
+                            <li><b>English: </b>Advanced speaking and writing (B2/ C1 Certificated)</li>
+                               <a href="{{ url_for('language') }}" target="_blank">See Certificate</a>
+                            <li><b>Portuguese: </b>Advanced Speaking and writing</li>
+                            <li><b>French: </b>Basic speaking and writing (B2/ C1 Certificated)</li>
+                            <li>Evaluate results of analyses</li>
+                            </ul>
+
+                            </P>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+<!--Contact Section-->
+
+    <div class="section contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card" style="margin-top:10px;">
+                        <h4 class="contact-title">Send a message</h4>
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            {% for message in messages %}
+                             <p>{{ message }}</p>
+                            {% endfor %}
+                          {% endif %}
+                        {% endwith %}
+                        <form method="post" action="">
+                            <div>{{ wtf.quick_form(form, novalidate=True, button_map={'submit': 'primary'}) }}</div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Contact Me</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone/ Whatsapp : <br> <a href="https://wa.me/4915756382341" target="_blank"><span class="text-muted">+49 157 563 823 41</span></a></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Alfred-Randt-Straße 28, 12559 Berlin - Germany</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <a href="mailto:luise.schwenkee@gmail.com"><span class="text-muted">luise.schwenkee@gmail.com</span></a></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-3">
+                           <li class="social-item"><a class="social-link" href="https://wa.me/4915756382341" target="_blank"><img src="static/assets/imgs/whatsapp-red.svg" ></a></li>
+                            <li class="social-item"><a class="social-link " href=mailto"luise.schwenkee@gmail.com" target="_blank"><i class="ti-google" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link " href="https://github.com/LuiseSchwenke" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+<footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> <span style="color_white">Luise Schwenke</span>
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+
+{% endblock %}

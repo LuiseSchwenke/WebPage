@@ -1,0 +1,42 @@
+{% include "base.html" %}
+{% extends 'bootstrap/base.html' %}
+{% block title %}About Me{% endblock %}
+<body>
+{% block content %}
+<div class="mypresentation" style="text-align:center">
+<h2 style="text-align:center">  MY LIFE IN SHORT</h2>
+<p style="align:justify; font-size: 18px;">I am Luise Schwenke and 25 years old. <br>
+In 2022 I graduated in Food Engineering at University of Applied Sciences Neubrandenburg/ Germany.<br>
+My biggest interest has always been in the areas of genetics, molecular biology and scientific research. Therefore in 2020 next to my bachelors, I started working in the laboratory of the local hospital. My obligatory internship for the bachelors I did in an analytical laboratory for foods and medical products. Next to it, I worked in a clinical laboratory for human genetics. After finishing my bachelors, I started working in a biotechnology company, designing pharmaceutical products.<br>
+For higher performance and results, the laboratory work is getting atomized more and more, especially by robots, which awakened my interest in IT and computer sciences. <br> It fascinated me so much, that I started taking coding lessons, to get to a professional level. During my jobs I always had the most fun helping to atomize processes and work flows, mainly with MS Excel. By now I created my own projects, including web development and data science. I am now taking further courses, to deepen and further expand my knowledge and skills, especially in the area of data sciences.<br>
+Privately I like to spend my time with my horse and enjoy the nature.<br>
+During an exchange semester in brazil during my bachelors, I discovered my love for surfing, which I do, whenever it is possible. Unfortunately, Berlin and whole Germany, my place of living, cannot offer an ocean with surfable waves, so I travel to the beaches, whenever I can.<br>
+Besides that, I enjoy to read books, especially about psychology and sciences or code some handy applications.
+
+   <p style="font-size: 20px;"> <b>Plotting My Month</b> </p>
+<img src="data:image/png;base64,{{image_base64}}" width=500 height=auto />
+
+
+<p style="align:justify; font-size: 18px;">Thank you for taking the time, reading through my short self-presentation. I hope it helped you getting a better impression of me.
+    If you have any questions, feel free to contact me: </p>
+
+          <div class="col" style="padding: 60px;">
+                <ul class="mt40 info list-unstyled" >
+
+                    <li><span>E-Mail</span> : luise.schwenkee@gmail.com</li>
+                    <li><span>Phone</span> : +49 157 563 823 41 </li>
+                </ul>
+                <ul class="social-icons pt-3" style="margin-left:370px !important">
+                    <li class="social-item"><a class="social-link text-light" href="https://wa.me/4915756382341" target="_blank"><img src="static/assets/imgs/whatsapp-red.svg" ></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:luise.schwenkee@gmail.com" target="_blank"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/LuiseSchwenke" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
+
+    </div>
+</div>
+
+</p>
+
+{% endblock %}
+</body>
+</html>
