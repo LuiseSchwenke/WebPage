@@ -65,6 +65,9 @@ def android():
 def language():
     return send_from_directory('static', path="files/Abitur.pdf")
 
+@app.route('/python')
+def python():
+    return send_from_directory('static', path="files/udemy_python.pdf")
 
 @app.route('/about_me')
 def about_me():
